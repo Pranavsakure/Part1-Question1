@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading animation</title>
+    <style>
+        
+        body{
+            background-color: black;
+        }
+
+        .container{
+          height: 100vh;
+          width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        section{
+            display: flex;
+            flex-direction: row;
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 3px;
+            animation-name: boxes;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+           }
+           @keyframes boxes {
+            0%{
+                background-color:white;
+            }
+            25%{
+                background-color:blue;
+            }
+            50%{
+                background-color: green;
+            }
+            75%{
+                background-color: red;
+            }
+            100%{
+                background-color: black;
+            }
+            
+           }
+           span{
+            width: 150px;
+
+           }
+           .rect{
+            background-color: purple;
+            width: 20px;
+            height: 20px;
+            animation-name: load;
+            animation-duration: 6s;
+            animation-timing-function: ease-in-out;
+            margin: 34px 0px;
+            border: 2px solid grey;
+           }
+           @keyframes load {
+            0%{
+                width: 0px;
+            }
+            60%{
+                width: 100px;
+            }
+            100%{
+                width: 150px;
+            }
+            
+           }
+
+        
+        </style>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        </section>
+        <section>
+            <div class="box" id="box4"></div>
+        <div class="box" id="box5"></div>
+        <div class="box" id="box6"></div>
+        </section>
+        <section>
+            <div class="box" id="box7"></div>
+        <div class="box" id="box8"></div>
+        <div class="box" id="box9"></div>
+        </section>
+        <span><div class="rect"></div></span>   
+    </div>
+
+    
+</body>
+</html>

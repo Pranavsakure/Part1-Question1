@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Flexboxes</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .container{
+            width: 75vw;
+            height:75vh;
+            border: 5px solid black;
+            background-color: grey;
+            margin: auto;
+            display: flex;
+        }
+        .item{
+            width: 10%;
+            height: 10%;
+            border: 2px solid white;
+            background-color: yellow;
+            margin: 5px;
+            padding: 3px;
+            text-align: center;
+            
+
+        }
+        #item1{
+            opacity: 0.5;
+            background-color: aquamarine;
+        
+        }
+        #item2{
+           opacity: 0.25;
+           background-color: bisque;
+        }
+        #item3{
+            align-self: center;
+            background-color: brown;
+
+        }
+        #item4{
+            background-color: royalblue;
+        }
+        #item5{
+            background-color: chocolate;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <div class="container">
+        <div class="item" id="item1">First box</div>
+        <div class="item" id="item2">Second box</div>
+        <div class="item" id="item3">Third box</div>
+        <div class="item" id="item4">Fourth box</div>
+        <div class="item" id="item5">Fifth box</div>
+    </div>
+</body>
+</html>
+<!-- this website is almost complete -->

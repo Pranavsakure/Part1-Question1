@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list</title>
+    <style>
+        body{
+            background-color: rgb(178, 175, 175);
+        }
+        @counter-style fire {
+            system: cyclic;
+            symbols: 🔥;
+            suffix: " ";
+        }
+        @counter-style wood {
+            system: cyclic;
+            symbols: 🪵;
+            suffix: " ";
+        }
+        .list{
+            list-style-type: wood;
+        }
+
+
+        .list:hover {
+            list-style-type: fire;
+            border: 2px solid black;
+            width: 248px;
+            cursor: pointer;
+
+        }
+        .data{
+            font-family:fantasy;
+            font-size: 20px;
+        }
+        h1{
+            padding-left: 3px;
+            width: 250px;
+        
+            font-family: fantasy;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is my list</h1>
+    <ul class="data">
+        <li class="list" data-icon="fire">Lorem ipsum dolor sit amet.</li>
+        <li class="list">Lorem ipsum dolor sit amet.</li>
+        <li class="list">Lorem ipsum dolor sit amet.</li>
+        <li class="list">Lorem ipsum dolor sit amet.</li>
+        <li class="list">Lorem ipsum dolor sit amet.</li>
+    </ul>
+
+</body>
+<!-- this question is almost ready to submit -->
+
+</html>
